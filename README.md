@@ -1,2 +1,2 @@
-# perfect-paddles
+# Perfect Paddles
 First project at RED
