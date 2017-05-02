@@ -8,21 +8,26 @@
     <meta name="description" content="Kayak rentals in Vancouver">
     <meta name="author:" content="Ian Hartlen">
 
+    <!-- <link rel="Stylesheet" href="meyer.css"> -->
+    <!-- <link rel="Stylesheet" href="normalize.css"> -->
     <link rel="Stylesheet" href="style.css">
 
   </head>
   <body>
 
     <header>
-      <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+      <div class="container">
 
-      <nav>
-        <ul>
-          <li><a href="#about">About</a> </li>
-          <li><a href="rentals">Rentals</a></li>
-          <li><a href="location">Location</a></li>
-        </ul>
-      </nav>
+        <img class="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+
+        <nav class="nav">
+          <ul>
+            <li class="nav__item"><a href="#about">About</a> </li>
+            <li class="nav__item"><a href="rentals">Rentals</a></li>
+            <li class="nav__item"><a href="location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 
@@ -60,15 +65,18 @@
     </section>
 
   <section>
-    <div class="container">
+
+    <div class="container clearfix">
 
     <h2>Rentals</h2>
 
-  <p>
-    All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration. Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly. Call <a href="tel:+16046046040">604-604-6040</a> to book now!
+  <p class="rentals__text">
+    All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.
+    Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.
+    Call <a href="tel:+16046046040">604-604-6040</a> to book now!
   </p>
 
-  <table>
+  <table class="rentals__table">
       <thead>
         <tr>
           <th>Duration</th>
@@ -78,7 +86,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>2hours</td>
+          <td>2 hours</td>
           <td>$35</td>
           <td>$55</td>
         </tr>
@@ -120,32 +128,33 @@
   </main>
 
 <footer>
+  <div class="container">
 
-  <p>©2017 Perfect Paddles Kayak Co. Powered by HTML and CSS.</p>
+    <p>©2017 Perfect Paddles Kayak Co. Powered by HTML and CSS.</p>
 
-  <p><a href="tel:+16046046040">604-604-6040</a>
-    <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
+    <p><a href="tel:+16046046040">604-604-6040</a>
+      <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
 
-  <p>Cornwall Avenue & Yew Street Vancouver, BC, Canada</p>
+    <p>Cornwall Avenue & Yew Street Vancouver, BC, Canada</p>
 
-  <nav>
-    <li>
-      <a href="https://facebook.com" target="_blank">facebook</a>
-    </li>
-    <li>
-      <a href="https://twitter.com" target="_blank">twitter</a>
-    </li>
-    <li>
-      <a href="https://instagram.com" target="_blank">instagram</a>
-    </li>
-    <li>
-      <a href="https://pinterest.com" target="_blank">pinterest</a>
-    </li>
-    <li>
-      <a href="https://plus.google.com" target="_blank">google+</a>
-    </li>
-  </nav>
-
+    <nav>
+      <li>
+        <a href="https://facebook.com" target="_blank">facebook</a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank">twitter</a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank">instagram</a>
+      </li>
+      <li>
+        <a href="https://pinterest.com" target="_blank">pinterest</a>
+      </li>
+      <li>
+        <a href="https://plus.google.com" target="_blank">google+</a>
+      </li>
+    </nav>
+  </div>
 </footer>
 
   </body>
