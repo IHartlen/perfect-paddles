@@ -32,63 +32,56 @@ body{
   font-size: 16px;
   font-family: arial;
 }
-
 .container{
   max-width: 960px;
   margin: 0 auto;
   border: 1px solid red;
 }
-
 .uppercase{
   text-transform: uppercase;
 }
-
 img{
   max-width: 100%
 }
 
+/*header*/
 header{
   background-color: black;
   text-align: center;
   width: 100%;
   height: 100px;
 }
-
 .logo{
   max-width: 50%;
   margin: 5%;
 }
-
 .ul-flex{
   display:flex;
   justify-content: space-around;
   margin-left: 10%;
   margin-right: 10%;
 }
-
 .nav__item {
   display: inline;
   font-family: 'Karla';
   font-style: normal;
   font-weight: bold;
 }
+/*end header*/
 
+/*banner*/
 .banner {
   background-image: url("../images/kayak-bkgd.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  position:inherit;
-  /*top: 65px;*/
 }
-
 .site-title{
   color: white;
   display: flex;
   flex-direction: column;
 }
-
 .Enjoy-the{
   padding:0.5em;
   padding-top: 2em;
@@ -97,19 +90,16 @@ header{
   font-style: normal;
   font-weight: normal;
 }
-
 .Great-Outdoors{
   padding:0.5em;
   font-family: 'Pacifico';
   font-size: 2em;
 }
-
 .from-the-water{
   padding:0.5em;
   font-family: 'Pacifico';
   font-size:1.5em;
 }
-
 .blurb{
   font-family: 'Karla';
   color:white;
@@ -119,11 +109,10 @@ header{
   margin-bottom: 3em;
   width: 75%;
 }
-
 .btn-signup {
   text-transform: uppercase;
   font-family: 'Karla';
-  font-size: 14px;
+  font-size: 1em;
   color: white;
   background-color: #df5850;
   border-radius: 50px;
@@ -136,6 +125,7 @@ header{
   border-color: #b64036;
   color: white;
 }
+/*end banner*/
 
 main{
   margin: 0.5em;
@@ -150,7 +140,7 @@ h2{
 
 p {
   line-height: 2em;
-  font-family: 'Karla';
+  /*font-family: 'Karla';*/
 }
 
 .about__text{
@@ -174,9 +164,7 @@ table, th, tr, td {
 border: 1px solid grey;
 text-align: center;
 font-family: 'Karla';
-/*font-size: 0.75em;*/
 }
-
 td:first-child {
   text-align: left;
 }
@@ -190,7 +178,7 @@ td:first-child {
   flex-direction: column;
   align-items: center;
 }
-/*end table styling*/
+/*end table*/
 
 .location h2{
   font-size: 2em;
@@ -203,15 +191,20 @@ td:first-child {
   width:100%;
 }
 
+/*footer*/
 footer{
   background-color: #2d2d2d;
   color:white;
   text-align: center;
 }
+.social__media li{
+  display:inline;
+}
+/*end footer*/
 
 /*tablet*/
-/*@media (min-width: 600px) {
-}*/
+@media (min-width: 600px) {
+}
 
 /*desktop*/
 @media (min-width: 1140px) {
