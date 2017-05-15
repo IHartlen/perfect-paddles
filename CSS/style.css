@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('fonts/Pacifico.ttf') format('truetype');
+}
+
+/*start page styling*/
+body{
+  font-size: 16px;
+  font-family: arial;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+img{
+  max-width: 100%
+}
+
+header{
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+.logo{
+  max-width: 50%;
+  margin: 5%;
+}
+
+.ul-flex{
+  display:flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.nav__item {
+  display: inline;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url("../images/kayak-bkgd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position:inherit;
+  /*top: 65px;*/
+}
+
+.site-title{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.Enjoy-the{
+  padding:0.5em;
+  padding-top: 2em;
+  font-family: 'Karla';
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.Great-Outdoors{
+  padding:0.5em;
+  font-family: 'Pacifico';
+  font-size: 2em;
+}
+
+.from-the-water{
+  padding:0.5em;
+  font-family: 'Pacifico';
+  font-size:1.5em;
+}
+
+.blurb{
+  font-family: 'Karla';
+  color:white;
+  padding:0.5em;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 1.5em auto;
+  margin-bottom: 3em;
+  width: 75%;
+}
+
+.btn-signup {
+  text-transform: uppercase;
+  font-family: 'Karla';
+  font-size: 14px;
+  color: white;
+  background-color: #df5850;
+  border-radius: 50px;
+  border-style: none;
+  padding: 0.6875em;
+  margin-bottom: 4em;
+}
+.btn-signup:hover {
+  background-color: #b64036;
+  border-color: #b64036;
+  color: white;
+}
+
+main{
+  margin: 0.5em;
+}
+
+h2{
+  text-align: center;
+  font-size: 2em;
+  padding: 0.5em;
+  font-family: 'Pacifico';
+}
+
+p {
+  line-height: 2em;
+  font-family: 'Karla';
+}
+
+.about__text{
+  text-align: center;
+}
+
+.rentals__text{
+  /*padding-bottom: 0.5em;*/
+}
+
+.rentals__line{
+  display: block;
+  padding-bottom:0.5em
+}
+
+/*table*/
+thead{
+  background-color: lightgrey;
+}
+table, th, tr, td {
+border: 1px solid grey;
+text-align: center;
+font-family: 'Karla';
+/*font-size: 0.75em;*/
+}
+
+td:first-child {
+  text-align: left;
+}
+.rentals__table{
+  width: 100%;
+  border-style: solid;
+  border-color: grey;
+}
+.clearfix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*end table styling*/
+
+.location h2{
+  font-size: 2em;
+}
+.location__text{
+  text-align: center;
+}
+
+.map{
+  width:100%;
+}
+
+footer{
+  background-color: #2d2d2d;
+  color:white;
+  text-align: center;
+}
+
+/*tablet*/
+/*@media (min-width: 600px) {
+}*/
+
+/*desktop*/
+@media (min-width: 1140px) {
+
+  header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    z-index: 100;
+  }
+
+  .nav__item {
+    display: inline;
+  }
+
+  .logo{
+    width: 30%;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .rentals__text{
+    width: 45%;
+    float: left;
+    /*padding-right: 1px;*/
+  }
+
+  .rentals__table{
+    /*border-style: solid;*/
+    width: 55%;
+    float: right;
+  }
+
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+}
