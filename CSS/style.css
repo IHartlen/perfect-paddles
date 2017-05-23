@@ -56,16 +56,16 @@ header{
   position: fixed;
   text-align: center;
   width: 100%;
-  height: 13%;
+  height: 85px;
   z-index: 100;
 }
 .banner {
   position: relative;
-  top: 87px;
+  top: 85px;
 }
 main{
   position: relative;
-  top: 87px;
+  top: 85px;
 }
 
 .logo{
@@ -87,7 +87,29 @@ main{
   color: white;
   text-decoration: none;
 }
-/*end header*/
+
+/*offset anchors*/
+#offset:before{
+    display: block;
+    content: "";
+    height: 85px;
+    margin-top: -85px;
+    visibility: hidden;
+}
+#offset2:before{
+    display: block;
+    content: "";
+    height: 85px;
+    margin-top: -85px;
+    visibility: hidden;
+}
+#offset3:before{
+    display: block;
+    content: "";
+    height: 85px;
+    margin-top: -85px;
+    visibility: hidden;
+}
 
 /*banner*/
 .banner {
@@ -108,15 +130,15 @@ main{
   flex-direction: column;
 }
 .Enjoy-the{
-  padding:0.5em;
-  padding-top: 2em;
+  padding-bottom:0.25em;
+  padding-top: 5em;
   font-family: 'Karla';
   font-size: 1.2em;
   font-style: normal;
   font-weight: normal;
 }
 .Great-Outdoors{
-  padding:0.5em;
+  padding: 0.25em;
   font-family: 'Pacifico';
   font-size: 3em;
   text-shadow: 2px 2px 5px #999;
@@ -160,8 +182,8 @@ main{
 }
 h2{
   text-align: center;
-  font-size: 2em;
-  padding: 1em;
+  font-size: 2.25em;
+  padding: 1.5em;
   font-family: 'Pacifico';
   color: #646464;
 }
@@ -169,12 +191,14 @@ p {
   line-height: 2em;
   color: #2d2d2d;
 }
+
 .about__text{
   text-align: center;
   padding-bottom: 1em;
+  margin-top: 0em;
 }
 .rentals__text{
-  /*padding-bottom: 0.5em;*/
+  padding-bottom: 0.5em;
 }
 .rentals__line{
   display: block;
@@ -215,9 +239,6 @@ td:first-child {
 }
 
 /*location and map*/
-.location h2{
-  font-size: 2em;
-}
 .location__text{
   text-align: center;
 }
@@ -231,7 +252,7 @@ td:first-child {
 /*footer*/
 footer{
   position: relative;
-  top: 87px;
+  top: 85px;
   background-color: #2d2d2d;
   color:white;
   text-align: center;
@@ -245,7 +266,7 @@ footer{
 }
 .footer-text-grey{
   font-family: 'Karla';
-  color:#646464;
+  color: #999;
   line-height: 1.5em;
 }
 .tel-footer{
@@ -270,33 +291,39 @@ footer{
   padding: 2em;
 }
 
+i:hover{
+  color: #b64036;
+}
+.icons-text:hover{
+  color: #b64036;
+}
+
 /*tablet*/
 @media (min-width: 600px) {
 
 /*resizing fixed banner and adjusting rest of content*/
-  header{
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    height: 5%;
-    z-index: 100;
-  }
-  .banner {
-    position: relative;
-    top: 45px;
-  }
-  main{
-    position: relative;
-    top: 45px;
-  }
+header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+}
+.banner{
+  position: relative;
+  top: 50px;
+}
+main{
+  position: relative;
+  top: 50px;
+}
 .logo{
-  max-width: 30%;
+  width: 30%;
+  max-height: 50px;
   margin: 0;
   padding-left: 1em;
   padding-top: 0em;
   padding-bottom: 0em;
-  right: 0
-  top:0
 }
 .header-flex{
   display:flex;
@@ -307,6 +334,25 @@ footer{
   padding: 1em;
 }
 
+/*offset anchors for new header size*/
+#offset:before{
+    height: 60px;
+    margin-top: -60px;
+}
+#offset2:before{
+    height: 60px;
+    margin-top: -60px;
+}
+#offset3:before{
+    height: 60px;
+    margin-top: -60px;
+}
+
+/*Enlarge header*/
+.Great-Outdoors{
+  font-size: 5em;
+}
+
 /*adjust shadowed text*/
 .blurb{
   width:60%;
@@ -315,7 +361,7 @@ footer{
 /*promo images in row instead of column*/
 .images-flex{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -361,6 +407,8 @@ footer{
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
+/*show social media text in footer*/
 .icons-text{
   display: inline;
   padding: 0em;
@@ -382,12 +430,21 @@ footer{
 /*desktop*/
 @media (min-width: 1140px) {
 
-  header{
-    height: 8%
-  }
+/*header{
+    height: 8% auto;
+  }*/
 
-  .about__text {
+.logo{
+  width: 20%;
+}
+
+.about__text {
     max-width: 70%;
     margin: 1.5em auto;
+    margin-top: 0em;
+  }
+
+.blurb{
+    width: 50%;
   }
 }
