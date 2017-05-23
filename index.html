@@ -8,6 +8,7 @@
     <meta name="description" content="Kayak rentals in Vancouver">
     <meta name="author:" content="Ian Hartlen">
 
+    <script src="https://use.fontawesome.com/c8e54fc84a.js"></script>
     <link rel="Stylesheet" href="CSS/meyer.css">
     <!-- <link rel="Stylesheet" href="normalize.css"> -->
     <link rel="Stylesheet" href="CSS/style.css">
@@ -15,16 +16,16 @@
   </head>
   <body>
 
-    <header>
-      <!-- <div class="container header-flex"> -->
+    <header class="header-flex">
+      <!-- <div class="header-flex"> -->
 
         <img class="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
 
         <nav class="nav">
           <ul class="ul-flex">
-            <li class="nav__item uppercase"><a href="#about">About</a> </li>
-            <li class="nav__item uppercase"><a href="#rentals">Rentals</a></li>
-            <li class="nav__item uppercase"><a href="#location">Location</a></li>
+            <li><a class="nav__item uppercase" href="#about">About</a> </li>
+            <li><a class="nav__item uppercase" href="#rentals">Rentals</a></li>
+            <li><a class="nav__item uppercase" href="#location">Location</a></li>
           </ul>
         </nav>
       <!-- </div> -->
@@ -53,15 +54,15 @@
     <section>
       <div class="container">
 
-      <h2>About</h2>
+      <h2><a name="about"></a> About</h2>
         <p class="about__text">
           Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks.  We cater to all skill levels and abilities, and offer a variety of lessons and tours too.
         </p>
-
-          <!-- Put images here  -->
-          <img src="images/sunset-kayak.jpg" alt="Sunset Kayak">
-          <img src="images/coffee-adventure.jpg" alt="Cup of Coffee">
-          <img src="images/girl-in-kayak.jpg" alt="Girl in Kayak">
+          <div class ="images-flex">
+            <img class="promo-image" src="images/sunset-kayak.jpg" alt="Sunset Kayak">
+            <img class="promo-image" src="images/coffee-adventure.jpg" alt="Cup of Coffee">
+            <img class="promo-image" src="images/girl-in-kayak.jpg" alt="Girl in Kayak">
+          </div>
         </div>
 
     </section>
@@ -70,7 +71,7 @@
 
     <div class="container clearfix">
 
-      <h2>Rentals</h2>
+      <h2><a name="rentals"></a>Rentals</h2>
 
         <p class="rentals__text">
           <span class="rentals__line"> All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration. </span>
@@ -116,14 +117,14 @@
 
   <section class="location">
     <div class="container">
-      <h2>Location</h2>
+      <h2><a name="location"></a>Location</h2>
 
           <p class="location__text">
             Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:
           </p>
 
           <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2014148051353!2d-123.1571647843109!3d49.27258057933022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1492649781417" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2014148051353!2d-123.1571647843109!3d49.27258057933022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1492649781417" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
   </section>
@@ -131,34 +132,45 @@
   </main>
 
       <footer>
-        <div class="container">
+        <div class="container footer-flex">
+          <article>
+            <p class="footer-text">©2017 Perfect Paddles Kayak Co. </p>
+            <p class="footer-text"> Powered by HTML and CSS.</p>
 
-          <p>©2017 Perfect Paddles Kayak Co. Powered by HTML and CSS.</p>
+            <p class="contact-info"><a class="tel-footer footer-text" href="tel:+16046046040">604-604-6040</a>
+              <a class="footer-text" href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
 
-          <p><a href="tel:+16046046040">604-604-6040</a>
-            <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
+            <p class="footer-text-grey">Cornwall Avenue & Yew Street </p>
+            <p class="footer-text-grey"> Vancouver, BC, Canada </p>
+          </article>
 
-          <p>Cornwall Avenue & Yew Street Vancouver, BC, Canada</p>
-
-          <nav class="social__media">
-            <li>
-              <a href="https://facebook.com" target="_blank">facebook</a>
-            </li>
-            <li>
-              <a href="https://twitter.com" target="_blank">twitter</a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank">instagram</a>
-            </li>
-            <li>
-              <a href="https://pinterest.com" target="_blank">pinterest</a>
-            </li>
-            <li>
-              <a href="https://plus.google.com" target="_blank">google+</a>
-            </li>
-          </nav>
-        </div>
-      </footer>
-
+          <article>
+            <nav class="social__media">
+              <ul>
+                <li>
+                  <a href="https://facebook.com" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="icons-text"> Facebook</span></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com" target="_blank"> <i class=" fa fa-twitter" aria-hidden="true"></i>
+                    <span class="icons-text"> Twitter</span></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="icons-text"> Instagram</span></a>
+                </li>
+                <li>
+                  <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i>
+                    <span class="icons-text"> Pinterest</span></a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <span class="icons-text"> Google+</span></a>
+                </li>
+              </ul>
+            </nav>
+        </article>
+      </div>
+    </footer>
   </body>
 </html>
