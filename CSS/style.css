@@ -89,21 +89,7 @@ main{
 }
 
 /*offset anchors*/
-#offset:before{
-    display: block;
-    content: "";
-    height: 85px;
-    margin-top: -85px;
-    visibility: hidden;
-}
-#offset2:before{
-    display: block;
-    content: "";
-    height: 85px;
-    margin-top: -85px;
-    visibility: hidden;
-}
-#offset3:before{
+a.offset:before{
     display: block;
     content: "";
     height: 85px;
@@ -290,7 +276,6 @@ footer{
   display:none;
   padding: 2em;
 }
-
 i:hover{
   color: #b64036;
 }
@@ -335,15 +320,7 @@ main{
 }
 
 /*offset anchors for new header size*/
-#offset:before{
-    height: 60px;
-    margin-top: -60px;
-}
-#offset2:before{
-    height: 60px;
-    margin-top: -60px;
-}
-#offset3:before{
+a.offset:before{
     height: 60px;
     margin-top: -60px;
 }
@@ -429,10 +406,6 @@ footer{
 
 /*desktop*/
 @media (min-width: 1140px) {
-
-/*header{
-    height: 8% auto;
-  }*/
 
 .logo{
   width: 20%;
