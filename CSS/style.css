@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('fonts/Pacifico.ttf') format('truetype');
+}
+
+/*start page styling*/
+body{
+  font-size: 16px;
+  font-family: 'Karla';
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+}
+.uppercase{
+  text-transform: uppercase;
+}
+img{
+  max-width: 100%
+}
+a{
+  color: #e2574c;
+}
+a:hover {
+  color: #b64036;
+}
+
+/*header*/
+header{
+  background-color: black;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 85px;
+  z-index: 100;
+}
+.banner {
+  position: relative;
+  top: 85px;
+}
+main{
+  position: relative;
+  top: 85px;
+}
+
+.logo{
+  max-width: 50%;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+.ul-flex{
+  display:flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nav__item {
+  display: inline;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/*offset anchors*/
+a.offset:before{
+    display: block;
+    content: "";
+    height: 85px;
+    margin-top: -85px;
+    visibility: hidden;
+}
+
+/*banner*/
+.banner {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, .35) 0%,
+    rgba(0, 0, 0, .25) 100%
+    ),
+  url("../images/kayak-bkgd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.site-title{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.Enjoy-the{
+  padding-bottom:0.25em;
+  padding-top: 5em;
+  font-family: 'Karla';
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+}
+.Great-Outdoors{
+  padding: 0.25em;
+  font-family: 'Pacifico';
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #999;
+}
+.from-the-water{
+  padding:0.5em;
+  font-family: 'Pacifico';
+  font-size:2.25em;
+  text-shadow: 2px 2px 5px #999;
+}
+.blurb{
+  font-family: 'Karla';
+  color:white;
+  padding:0.5em;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 1.5em auto;
+  margin-bottom: 3em;
+  line-height: 1.25em;
+  width: 75%;
+}
+.btn-signup {
+  text-transform: uppercase;
+  font-family: 'Karla';
+  font-size: 1em;
+  color: white;
+  background-color: #df5850;
+  border-radius: 50px;
+  border-style: none;
+  padding: 0.8em;
+  margin-bottom: 4em;
+}
+.btn-signup:hover {
+  background-color: #b64036;
+  border-color: #b64036;
+  color: white;
+}
+
+/*main, about and rentals*/
+main{
+  margin: 0.5em;
+}
+h2{
+  text-align: center;
+  font-size: 2.25em;
+  padding: 1.5em;
+  font-family: 'Pacifico';
+  color: #646464;
+}
+p {
+  line-height: 2em;
+  color: #2d2d2d;
+}
+
+.about__text{
+  text-align: center;
+  padding-bottom: 1em;
+  margin-top: 0em;
+}
+.rentals__text{
+  padding-bottom: 0.5em;
+}
+.rentals__line{
+  display: block;
+  padding-bottom:0.5em
+}
+
+/*images*/
+.promo-image {
+  margin-top: 10px;
+  box-shadow: 1px 0px 5px 1px #666;
+}
+
+/*rentals table*/
+thead{
+  background-color: #e6e6e6;
+}
+table, th, tr, td {
+border: 1px solid #c8c8c8;
+text-align: center;
+font-family: 'Karla';
+padding: 0.7em;
+}
+td:first-child {
+  text-align: left;
+}
+.rentals__table tbody tr:hover{
+  background-color:#fbf6d9;
+}
+.rentals__table{
+  width: 100%;
+  border-style: solid;
+  border-color: grey;
+}
+.clearfix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*location and map*/
+.location__text{
+  text-align: center;
+}
+.map{
+  width:100%;
+  height: 200px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/*footer*/
+footer{
+  position: relative;
+  top: 85px;
+  background-color: #2d2d2d;
+  color:white;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 5%;
+}
+.footer-text{
+  color:white;
+  line-height: 1.5em;
+  font-family: 'Karla';
+}
+.footer-text-grey{
+  font-family: 'Karla';
+  color: #999;
+  line-height: 1.5em;
+}
+.tel-footer{
+  text-decoration: none;
+}
+.social_media{
+  top: 1em;
+}
+.social__media li {
+  display:inline;
+}
+.social__media a{
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+}
+.social__media i {
+  padding-top: 1em;
+}
+.icons-text{
+  display:none;
+  padding: 2em;
+}
+i:hover{
+  color: #b64036;
+}
+.icons-text:hover{
+  color: #b64036;
+}
+
+/*tablet*/
+@media (min-width: 600px) {
+
+/*resizing fixed banner and adjusting rest of content*/
+header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+}
+.banner{
+  position: relative;
+  top: 50px;
+}
+main{
+  position: relative;
+  top: 50px;
+}
+.logo{
+  width: 30%;
+  max-height: 50px;
+  margin: 0;
+  padding-left: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+.header-flex{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item{
+  padding: 1em;
+}
+
+/*offset anchors for new header size*/
+a.offset:before{
+    height: 60px;
+    margin-top: -60px;
+}
+
+/*Enlarge header*/
+.Great-Outdoors{
+  font-size: 5em;
+}
+
+/*adjust shadowed text*/
+.blurb{
+  width:60%;
+}
+
+/*promo images in row instead of column*/
+.images-flex{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.images-flex img{
+  width: 32%;
+}
+
+/*new table layout*/
+.rentals__text{
+  width: 50%;
+  float: left;
+}
+.rentals__table{
+  width: 45%;
+  float: right;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*adjust map height*/
+.map{
+  width:100%;
+  height: 200px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*adjust footer layout and position*/
+footer{
+  position: relative;
+  top: 50px;
+  text-align: left;
+  font-size: 0.75em;
+  padding: 1em;
+}
+.footer-flex{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/*show social media text in footer*/
+.icons-text{
+  display: inline;
+  padding: 0em;
+}
+.social__media li {
+  display:block;
+}
+.social__media i{
+  padding-right: 0.5em;
+}
+.fa-facebook i{
+  padding-top: 0em;
+}
+.contact-info{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*desktop*/
+@media (min-width: 1140px) {
+
+.logo{
+  width: 20%;
+}
+
+.about__text {
+    max-width: 70%;
+    margin: 1.5em auto;
+    margin-top: 0em;
+  }
+
+.blurb{
+    width: 50%;
+  }
+}
